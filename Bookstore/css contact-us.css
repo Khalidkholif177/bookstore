@@ -1,0 +1,129 @@
+
+*{ margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ font-family: sans-serif monospace;
+}
+header{padding: 30px 0px; background-color:#B0A695; }
+ 
+header a i{float: right;
+color: black; padding: 5px;}
+
+.cover{display: block;
+     margin-left: 80px; ;} 
+
+    
+
+header .ul{ list-style:
+     none; 
+     padding: 10px 0px; 
+      font-size: large; 
+     }
+
+li{float: left;  color: black;}
+
+li a{color: black; }
+
+ li a:hover{color: black;  background-color: #776B5D; padding: 15px; text-decoration: none; border-radius: 10px;}
+
+li a{ text-decoration: none; display: flex; 
+    padding: 8px 10px ;  
+ }
+      
+
+ .contact-form {
+     border: 1px solid #DDD;
+     padding: 20px;
+     border-radius: 5px;
+     width: 500px;
+     margin: 0 auto;
+     background-color: #F3EEEA;
+   }
+   
+   h2 {
+     text-align: center;
+     margin-bottom: 20px;
+   }
+   
+   label {
+     display: block;
+     margin-bottom: 5px;
+   }
+   
+   input, textarea {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+     font-size: 16px;
+   }
+   
+   textarea {
+     height: 150px;
+   }
+   
+   button {
+     background-color: #4CAF50;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 3px;
+     cursor: pointer;
+   }
+   
+   button:hover {
+     background-color: #3e8e41;
+   }
+footer {
+     background-color: #776B5D;
+     color: black;
+     padding: 30px 0;
+   }
+   
+  
+   
+   .footer-left img {
+     width: 150px;
+     height: auto;
+   }
+   
+   .footer-center h4,
+   .footer-right h4 {
+     margin-bottom: 10px;
+   }
+   
+   .footer-center ul,
+   .footer-right ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+   }
+   
+   .footer-center li a,
+   .footer-right li a {
+     text-decoration: none;
+     color: black;
+     padding: 5px 10px;
+     
+   }
+   
+   .footer-center li a:hover,
+   .footer-right li a:hover {
+     color: black;
+     border-radius: 60px;
+  background-color: #F3EEEA; }
+   
+   .social-icons {
+     display: flex;
+   }
+   
+   .social-icons li {
+     margin: 0 5px;
+   }
+   
+   .footer-bottom {
+     text-align: center;
+     padding: 10px 0;
+     font-size: 12px;
+   }
+   

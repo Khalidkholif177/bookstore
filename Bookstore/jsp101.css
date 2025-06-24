@@ -1,0 +1,108 @@
+*{ margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+font-family: sans-serif monospace;
+}
+header{padding: 30px 0px; background-color:#B0A695; }
+
+header a i{float: right;
+color: black; padding: 5px;}
+
+.cover{display: block;
+    margin-left: 80px; ;} 
+
+   
+
+header .ul{ list-style:
+    none; 
+    padding: 10px 0px; 
+     font-size: large; 
+    }
+  .active ,a :hover{background-color: #776B5D; transition: .5s; border-radius: 7px;}
+
+li{float: left;  color: black;}
+
+li a{color: black; }
+
+li a:hover{color: black;  background-color: #776B5D; padding: 15px; text-decoration: none; border-radius: 10px;}
+
+li a{ text-decoration: none; display: flex; 
+   padding: 8px 10px ;  
+}
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .cart-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product-details {
+    /* Styling for product details */
+  }
+  
+  .counter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .counter button {
+    padding: 5px;
+  }
+  
+  .counter span {
+    margin: 0 10px;
+  }
+  
+  .price-section {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+  }
+  
+  .delete-btn,
+  .like-btn {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    width: 18px;
+    height: 17px;
+    background: url('delete-icn.svg') no-repeat center;
+  }
+  
+  .like-btn {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    background: url('twitter-heart.png');
+    width: 60px;
+    height: 60px;
+    background-size: 2900%;
+    background-repeat: no-repeat;
+  }
+  
+  .is-active {
+    animation-name: animate;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(28);
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes animate {
+    0%   { background-position: left;  }
+    50%  { background-position: right; }
+    100% { background-position: right; }
+  }

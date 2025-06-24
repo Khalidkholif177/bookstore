@@ -1,0 +1,10 @@
+*{padding: 0px;
+margin: 0px;
+font: 1em sans-serif;}
+.form{ display: flex; justify-content: center; margin: 200px 0px ; 
+padding: 15px 30px; list-style: none;}
+.contanierfelex .iteam1{ height: 300px;width: 300px; background-color: aqua; color: red;}
+
+.ul{list-style: none;
+overflow: hidden;}
+.ul .li{float: left; margin: 0px 15px;}

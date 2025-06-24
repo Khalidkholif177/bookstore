@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shipping</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="shipping.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <script src="https://kit.fontawesome.com/e6a8107d1a.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #efefef">
+    <div id="celebration-container" class="celebration-container"></div>
+
+
+<header class="header">
+  <a href="index.html"><img src="logo123.png" alt="logo" width="200px" height="70px"></a>
+  <ul class="ul">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop page.html">Shop</a></li>
+    <li><a href="html about us.html">About Us</a></li>
+    <li><a href="101.html">Contact Us</a></li>
+  </ul>
+  <div class="icon">
+    <a href="sign up.html"><i class="fa-solid fa-user"></i></a>
+    <a href="#" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></a>
+  </div>
+</header>
+<br><br><hr>
+
+<div id="order-confirmation" class="order-confirmation">
+    <i class="fas fa-check-circle"></i> 
+    <span>Your order is confirmed!</span>
+  </div>
+
+
+  <div class="progress-bar-container">
+    <div class="progress-bar">
+        <div class="step" id="step1">
+            <div class="step-marker">1</div>
+            <p class="step-title">Confirm Order</p>
+        </div>
+        <div class="step active" id="step2"> 
+            <div class="step-marker">2</div>
+            <p class="step-title">Feedback</p>
+        </div>
+        <div class="step" id="step3">
+            <div class="step-marker">3</div>
+            <p class="step-title">Shipped</p>
+        </div>
+        <div class="step" id="step4">
+            <div class="step-marker">4</div>
+            <p class="step-title"> Delivered </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="feedback-form-container">
+    <form id="feedbackForm">
+      <h2>Feedback Form</h2>
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+      </div>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+  
+
+
+
+  
+<br><br>
+<footer class="footer">
+  <div class="container">
+      <div class="footer-row">
+          <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Get Help</h4>
+              <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Order Status</a></li>
+                  <li><a href="#">Payment Options</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Online Shop</h4>
+              <ul>
+                  <li><a href="#">English books</a></li>
+                  <li><a href="#">Arbic Books</a></li>
+                  <li><a href="#">Kids Books</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="shipping.js"></script>
+
+</body>
+</html>

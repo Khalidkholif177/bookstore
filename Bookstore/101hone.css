@@ -1,0 +1,88 @@
+/* Add your base styles here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #B0A695;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-icon {
+    position: relative;
+    color: #000;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #776B5D;
+    border-radius: 10px;
+}
+
+.footer-center, .footer-right {
+    text-align: center;
+}
+
+.footer-center ul, .footer-right ul {
+    list-style: none;
+}
+
+.footer-center ul li a, .footer-right ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+/* Add here your shopping cart sidebar styles */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px; /* initially hidden */
+    width: 300px;
+    background: #f8f9fa;
+    transition: right 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.cart-sidebar.active {
+    right: 0; /* slide in */
+}
+
+.cart-item button {
+    margin-left: 10px;
+}

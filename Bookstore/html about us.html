@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css aboutus.css">
+    <script src="https://kit.fontawesome.com/e6a8107d1a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+ <br><br><br>
+
+<header class="header">
+  <a href="index.html"><img src="logo123.png" alt="logo" width="200px" height="70px"></a>
+  <ul class="ul">
+      <li><a  href="index.html">Home</a></li>
+      <li><a href="shop page.html">Shop</a></li>
+      <li><a  class="active"href="#">About Us</a></li>
+      <li><a href="101.html">Contact Us</a></li>
+  </ul>
+  <div class="icon">
+    <button id="dark-mode-toggle">
+      <i class="fas fa-moon" id="dark-icon" style="display:none;"></i>
+      <i class="fas fa-sun" id="light-icon"></i>
+    </button>
+      <a href="sign up.html" ><i class="fa-solid fa-user"></i></a>
+      <a href="#" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></a>
+
+  </div>
+</header>
+
+  <main>
+    <section id="mission">
+      <h2>Mission</h2>
+      <p>Our mission is to empower and inspire a lifelong love for reading by providing a unique selection of books in a warm, welcoming environment.</p>
+      <button class="details-button" data-details-target="mission-details">Show More</button>
+      <div id="mission-details" style="display:none;">
+          <p>At Our Bookstore, we believe that books are gateways to immense knowledge, entertainment, and personal growth. Every day, we strive to fulfill our mission through several key practices:
+
+            Curated Selections: We carefully select books that cater to the diverse interests and needs of our community. From the latest bestsellers to obscure genres, our shelves are stocked to ensure there's something for everyone.
+            Community Engagement: We host regular reading clubs, author signings, and storytelling sessions that engage readers of all ages. These events serve as a platform for sharing ideas and fostering a sense of community among local book lovers.
+            Accessible Learning: Recognizing that affordability can be a barrier, we run a 'Book Exchange Program' and offer discounts to students and seniors, ensuring that our resources are accessible to everyone, regardless of economic status.
+            A Welcoming Space: Our bookstore is more than just a place to buy books. It's a community hub designed with comfort in mind, featuring reading nooks, free Wi-Fi, and a cozy café area where patrons can read, work, or just relax.
+            Staff Expertise: Our knowledgeable staff are always on hand to provide recommendations and guidance, helping customers find books they love, and introducing them to new reading possibilities.
+            By implementing these initiatives daily, we uphold our mission to not just sell books, but to enrich the lives of those in our community through the joy of reading.</p>
+      </div>
+      <img src="aboutus1.jpg" alt="Our Mission">
+  </section>
+  
+  <section id="vision">
+      <h2>Vision</h2>
+      <p>Our vision is to be a cornerstone in the community, fostering education and understanding through literature and engagement.</p>
+      <button class="details-button" data-details-target="vision-details">Show More</button>
+      <div id="vision-details" style="display:none;">
+          <p>Vision Details:
+
+            Our vision extends beyond the walls of our bookstore into the broader community where we aim to make a lasting impact:
+            
+            Literacy Programs: We are committed to increasing literacy rates across all age groups by collaborating with local schools and libraries to develop engaging literacy programs that excite and teach.
+            Cultural Events: By organizing and sponsoring cultural events, we celebrate the diverse voices within our community, ensuring that varied cultural heritages are represented and appreciated in the literature we offer.
+            Sustainability Initiatives: Recognizing our responsibility to the environment, we aim to operate sustainably, from promoting digital editions to using eco-friendly materials in our operations.
+            Support for Local Authors: We actively support local authors through special in-store promotions, dedicated sections for their works, and hosting book launch events, providing them a platform to reach readers.
+            Community Partnerships: Going forward, we plan to expand our partnerships with local businesses, educational institutions, and non-profits to further integrate our services with the needs of our community, creating a network of support focused on mutual growth and learning.
+            In pursuing these goals, we envision Our Bookstore not just as a place to purchase books, but as a vital resource and ally to the community, helping to bridge gaps in education and cultural understanding. By continually adapting and expanding our services, we aim to fulfill our vision of being a cornerstone that supports and uplifts the entire community.
+            
+            These expanded sections provide more depth to the bookstore's mission and vision, clearly articulating daily activities and long-term goals that show commitment to community and education.</p>
+      </div>
+      <img src="aboutus2.jpg" alt="Our Vision">
+  </section>
+  
+  </main>
+  <br><br>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online Shop</h4>
+                <ul>
+                    <li><a href="#">English books</a></li>
+                    <li><a href="#">Arbic Books</a></li>
+                    <li><a href="#">Kids Books</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+   
+   
+  
+
+  <script >document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.details-button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const detailsId = this.getAttribute('data-details-target');
+            const details = document.getElementById(detailsId);
+
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+                this.textContent = 'Show More';
+            } else {
+                details.style.display = 'block';
+                this.textContent = 'Show Less';
+            }
+        });
+    });
+});
+  </script>
+
+  <script>
+  document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      var darkIcon = document.getElementById('dark-icon');
+      var lightIcon = document.getElementById('light-icon');
+      if (document.body.classList.contains('dark-mode')) {
+          darkIcon.style.display = 'inline';
+          lightIcon.style.display = 'none';
+      } else {
+          darkIcon.style.display = 'none';
+          lightIcon.style.display = 'inline';
+      }
+  });
+  </script>
+</body>
+</html>

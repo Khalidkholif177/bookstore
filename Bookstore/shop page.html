@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="shop page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e6a8107d1a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+
+<header class="header">
+    <a href="index.html"><img src="logo123.png" alt="logo" width="200px" height="70px"></a>
+    <ul class="ul">
+        <li><a  href="index.html">Home</a></li>
+        <li><a class="active" href="shop page.html">Shop</a></li>
+        <li><a href="html about us.html">About Us</a></li>
+        <li><a href="101.html">Contact Us</a></li>
+    </ul>
+    <div class="icon">
+        <button id="dark-mode-toggle">
+            <i class="fas fa-moon" id="dark-icon" style="display:none;"></i>
+            <i class="fas fa-sun" id="light-icon"></i>
+          </button>
+            <a href="sign up.html" ><i class="fa-solid fa-user"></i></a>
+        <a href="#" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></a>
+  
+    </div>
+  </header>
+  
+  
+  
+          
+  </div>
+<br><br><br><br><br>  
+<div class="book-filters">
+    <button onclick="filterBooks('all')">All</button>
+    <button onclick="filterBooks('english')">English Books</button>
+    <button onclick="filterBooks('arabic')">Arabic Books</button>
+    <button onclick="filterBooks('kids')">Kids Books</button>
+</div>
+
+    
+<div class="book-category english">
+    <h2 class="title best-seller" style="display: flex; justify-content: center; ">English Books</h2>
+    <div class="flex-container">
+      <!-- Card 1 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="snow-at-sunset.html"><img src="bookimg.jpeg" alt="The Prince" ></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="snow-at-sunset.html">Snow AT Sunset</a></h5>
+              <p class="card-text">EGP 210</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product1', name: 'Snow AT Sunset', price: 210, img: 'bookimg.jpeg' })">Add to Cart</button>
+    
+            </div>
+      </div>
+    
+      <!-- Card 2 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="12-rules-of-life.html"><img src="img2.jpg" alt="12 Rules of Life"></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="12-rules-of-life.html">12 Rules of Life</a></h5>
+              <p class="card-text">EGP 500</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product2', name: '12 Rules of Life', price: 500, img: 'img2.jpg' })">Add to Cart</button>
+            </div>
+      </div>
+    
+      <!-- Card 3 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="harry-potter-azkaban.html"><img src="harry3.jpg" alt="Harry Potter and the Prisoner of Azkaban"></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="harry-potter-azkaban.html">Harry Potter and the Prisoner of Azkaban</a></h5>
+              <p class="card-text">EGP 1000</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product3', name: 'Harry Potter and the Prisoner of Azkaban', price: 1000, img: 'harry3.jpg' })">Add to Cart</button>
+            </div>
+      </div>
+    
+      <!-- Card 4 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="crime.html"><img src="img4.jpg" alt="Crime and Punishment"></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="crime.html">Crime and Punishment</a></h5>
+              <p class="card-text">EGP 450</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product4', name: 'Crime and Punishment', price: 450, img: 'img4.jpg' })">Add to Cart</button>
+            </div>
+      </div>
+    </div>
+</div>
+    
+
+
+<div class="book-category arabic">
+    <h2 class="title best-seller" style="display: flex; justify-content: center; ">Arbic Books</h2>
+    <div class="flex-container">
+      <!-- Card 5 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="shalla-libon.html"><img src="img arb1.jpg" alt="#" ></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="shalla-libon.html">شله ليبون</a></h5>
+              <p class="card-text">EGP 210</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product5', name: 'شله ليبون', price: 210, img: 'img arb1.jpg' })">Add to Cart</button>
+    
+            </div>
+      </div>
+    
+      <!-- Card 5 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="alkhoroug-an-nass.html"><img src="img arb2.jpg" alt="#"></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="alkhoroug-an-nass.html">الخروج عن النص</a></h5>
+              <p class="card-text">EGP 500</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product6', name: 'الخروج عن النص', price: 500, img: 'img arb2.jpg' })">Add to Cart</button>
+            </div>
+      </div>
+    
+      <!-- Card 6 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="bayn-al-qasrayn.html"><img src="img arb3.jpg" alt="#"></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="bayn-al-qasrayn.html">بين القصرين</a></h5>
+              <p class="card-text">EGP 1000</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product7', name: 'بين القصرين', price: 1000, img: 'img arb3.jpg' })">Add to Cart</button>
+            </div>
+      </div>
+    
+      <!-- Card 8 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="utopia.html"><img src="img arb4.jpg" alt="#"></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="utopia.html">يوتوبيا</a></h5>
+              <p class="card-text">EGP 450</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product8', name: 'يوتوبيا', price: 450 ,img: 'img arb4.jpg'  })">Add to Cart</button>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="book-category kids">
+    <h2 class="title best-seller" style="display: flex; justify-content: center; ">Kids Books</h2>
+    <div class="flex-container">
+      <!-- Card 9 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="last-kids-earth-mid.html"><img src="kids1.jpg" alt="#" ></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="last-kids-earth-mid.html">Last Kids on Earth and the Mid</a></h5>
+              <p class="card-text">EGP 210</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product9', name: 'Last Kids on Earth and the Mid', price: 210, img: 'kids1.jpg' })">Add to Cart</button>
+    
+            </div>
+      </div>
+    
+      <!-- Card 10 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="last-kids-earth-ske.html"><img src="kids2.jpg" alt="#"></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="last-kids-earth-ske.html">Last Kids on Earth and the Ske</a></h5>
+              <p class="card-text">EGP 150</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product10', name: 'Last Kids on Earth and the Ske', price: 150, img: 'kids2.jpg' })">Add to Cart</button>
+            </div>
+      </div>
+    
+      <!-- Card 11 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="wordsearches-clever-kids.html"><img src="kids3.jpg" alt="#"></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="wordsearches-clever-kids.html">Wordsearches for Clever Kids</a></h5>
+              <p class="card-text">EGP 100</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product11', name: 'Wordsearches for Clever Kids', price: 100, img: 'kids3.jpg' })">Add to Cart</button>
+            </div>
+      </div>
+    
+      <!-- Card 12 -->
+      <div class="card">
+          <div class="card-img">
+              <a href="animal-riddles-book.html"><img src="kids4.jpg" alt="#"></a>
+          </div>
+          <div class="card-body">
+              <h5 class="card-title"><a href="animal-riddles-book.html">Animal Riddles Book</a></h5>
+              <p class="card-text">EGP 50</p>
+              <button class="add-to-cart-btn" onclick="addToCart({ id: 'product12', name: 'Animal Riddles Book', price: 50 ,img: 'kids4.jpg'  })">Add to Cart</button>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+      <div id="cart-container" style="display: none; position: fixed; right: 0; top: 0; width: 300px; height: 100vh; background: white; box-shadow: -2px 0 8px rgba(0,0,0,0.1); overflow-y: auto; padding: 20px; z-index: 1000;">
+
+      </div>
+
+      <br><br>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="#">English books</a></li>
+                        <li><a href="#">Arabic Books</a></li>
+                        <li><a href="#">Kids Books</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="shop.js"></script>
+</body>
+</html>

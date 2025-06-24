@@ -1,0 +1,109 @@
+*{ margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  font-family: sans-serif monospace;
+  }
+  header{padding: 30px 0px; background-color:#B0A695; }
+  
+  header a i{float: right;
+  color: black; padding: 5px;}
+  
+  .cover{display: block;
+    margin-left: 80px; ;} 
+  
+   
+  
+  header .ul{ list-style:
+    none; 
+    padding: 10px 0px; 
+     font-size: large; 
+    }
+  
+  li{float: left;  color: black;}
+  
+  li a{color: black; }
+  
+  li a:hover{color: black;  background-color: #776B5D; padding: 15px; text-decoration: none; border-radius: 10px;}
+  
+  li a{ text-decoration: none; display: flex; 
+   padding: 8px 10px ;  
+  }
+  
+  .flex-container  {display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  } 
+  .flex-container .card-title a{text-decoration: none; color: black;}
+  
+  .flex-container .card{background-color: #EBE3D5; width: 250px; margin: 10px;}
+  .card-body{color: black; }
+  
+  .flex-container .button{background-color: #776B5D; 
+     color: #F3EEEA;
+      border-radius: 35px; 
+      padding: 5px 10px; float: right; }
+  
+  .flex-container .button a{color: black; 
+     text-decoration: none;}
+  .flex-container .button  :hover{color: black; 
+      background-color: #776B5D; 
+      padding: 5px 10px; text-decoration: none; 
+      border-radius: 35px;}
+  
+  .a-contanier{background-color: #776B5D;
+      display: flex;
+       justify-content: center;  }
+  
+                footer {
+                   background-color: #776B5D;
+                   color: black;
+                   padding: 30px 0;
+                 }
+                 
+                
+                 
+                 .footer-left img {
+                   width: 150px;
+                   height: auto;
+                 }
+                 
+                 .footer-center h4,
+                 .footer-right h4 {
+                   margin-bottom: 10px;
+                 }
+                 
+                 .footer-center ul,
+                 .footer-right ul {
+                   list-style: none;
+                   padding: 0;
+                   margin: 0;
+                 }
+                 
+                 .footer-center li a,
+                 .footer-right li a {
+                   text-decoration: none;
+                   color: black;
+                   padding: 5px 10px;
+                   
+                 }
+                 
+                 .footer-center li a:hover,
+                 .footer-right li a:hover {
+                   color: black;
+                   border-radius: 60px;
+                background-color: #F3EEEA; }
+                 
+                 .social-icons {
+                   display: flex;
+                 }
+                 
+                 .social-icons li {
+                   margin: 0 5px;
+                 }
+                 
+                 .footer-bottom {
+                   text-align: center;
+                   padding: 10px 0;
+                   font-size: 12px;
+                 }
+                 
